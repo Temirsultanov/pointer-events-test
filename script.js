@@ -2,8 +2,8 @@ const button = document.querySelector(".button");
 const output = document.querySelector(".output")
 
 
-function onTouchStart(e) {
-  output.textContent = "touchstart"
+function onPointerDown(event) {
+  output.textContent = "Тип нажатия: " + (event.pointerType);
 }
 
-button.addEventListener("touchstart", onTouchStart);
+button.addEventListener("pointerdown", onPointerDown);
